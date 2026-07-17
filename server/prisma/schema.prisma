@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id          Int       @id @default(autoincrement())
+  name        String    @unique
+  description String?
+  color       String    @default("#4f46e5")
+  products    Product[]
+  createdAt   DateTime  @default(now())
+}
+
+model Supplier {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String?
+  phone     String?
+  address   String?
+  contact   String?
+  products  Product[]
+  createdAt DateTime @default(now())
+}
+
+model Product {
+  id          Int           @id @default(autoincrement())
+  name        String
+  description String?
+  sku         String        @unique
+  quantity    Int           @default(0)
+  minStock    Int           @default(5)
+  price       Float
+  costPrice   Float         @default(0)
+  unit        String        @default("pcs")
+  location    String?
+  categoryId  Int?
+  supplierId  Int?
+  category    Category?     @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  supplier    Supplier?     @relation(fields: [supplierId], references: [id], onDelete: SetNull)
+  movements   StockMovement[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model StockMovement {
+  id        Int      @id @default(autoincrement())
+  type      String
+  quantity  Int
+  reason    String?
+  productId Int
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
