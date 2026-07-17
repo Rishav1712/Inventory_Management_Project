@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="300" fill="url(#bg)" rx="12"/>
+  <rect x="40" y="40" width="820" height="220" rx="10" fill="url(#card)"/>
+  <rect x="65" y="65" width="175" height="80" rx="8" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="75" y="75" width="60" height="10" rx="3" fill="#ffffff" fill-opacity="0.5"/>
+  <rect x="75" y="95" width="40" height="18" rx="3" fill="#ffffff" fill-opacity="0.8"/>
+  <rect x="75" y="120" width="50" height="8" rx="2" fill="#4ade80" fill-opacity="0.7"/>
+  <rect x="260" y="65" width="175" height="80" rx="8" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="270" y="75" width="60" height="10" rx="3" fill="#ffffff" fill-opacity="0.5"/>
+  <rect x="270" y="95" width="40" height="18" rx="3" fill="#ffffff" fill-opacity="0.8"/>
+  <rect x="270" y="120" width="50" height="8" rx="2" fill="#60a5fa" fill-opacity="0.7"/>
+  <rect x="455" y="65" width="175" height="80" rx="8" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="465" y="75" width="60" height="10" rx="3" fill="#ffffff" fill-opacity="0.5"/>
+  <rect x="465" y="95" width="40" height="18" rx="3" fill="#ffffff" fill-opacity="0.8"/>
+  <rect x="465" y="120" width="50" height="8" rx="2" fill="#f87171" fill-opacity="0.7"/>
+  <rect x="650" y="65" width="175" height="80" rx="8" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="660" y="75" width="60" height="10" rx="3" fill="#ffffff" fill-opacity="0.5"/>
+  <rect x="660" y="95" width="40" height="18" rx="3" fill="#ffffff" fill-opacity="0.8"/>
+  <rect x="660" y="120" width="50" height="8" rx="2" fill="#facc15" fill-opacity="0.7"/>
+  <rect x="65" y="165" width="370" height="80" rx="8" fill="#ffffff" fill-opacity="0.1"/>
+  <polyline points="80,225 130,200 180,210 230,185 280,195 330,175 380,180 420,165" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="455" y="165" width="370" height="80" rx="8" fill="#ffffff" fill-opacity="0.1"/>
+  <rect x="470" y="180" width="340" height="6" rx="2" fill="#ffffff" fill-opacity="0.25"/>
+  <rect x="470" y="195" width="340" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="470" y="207" width="340" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="470" y="219" width="340" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="470" y="231" width="340" height="4" rx="2" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="450" y="26" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff" fill-opacity="0.9">INVENTORY MANAGEMENT SYSTEM</text>
+</svg>
